@@ -1,0 +1,49 @@
+.container::before {
+  position: absolute;
+  content: "";
+  width: 90%;
+  height: 100%;
+  left: 7%;
+  top: -10%;
+  border: thin solid var(--text1);
+}
+.container::after {
+  position: absolute;
+  content: "";
+  width: 15vw;
+  height: 15vw;
+  left: -10%;
+  top: -30%;
+  background-color: var(--secondary);
+  border-radius: 50%;
+}
+
+.squareDecorator1 {
+  position: absolute;
+  width: 15rem;
+  height: 8rem;
+  bottom: 5%;
+  right: 10%;
+  background-color: var(--primary);
+}
+
+.squareDecorator2 {
+  content: "";
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color: var(--primary);
+  bottom: 20%;
+  z-index: 1;
+}
+
+.squareDecorator3 {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--primary);
+  top: 0%;
+  right: -5%;
+  z-index: 1;
+}
