@@ -13,6 +13,7 @@ export default {
         background2: "var(--background2)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
         text1: "var(--text1)",
         border: "var(--border)",
       },

@@ -3,7 +3,7 @@ import React from "react";
 
 const Menu = () => {
   return (
-    <nav className="sticky top-4">
+    <nav className="sticky top-4 z-[99999]">
       <ul
         className="flex gap-6 items-center justify-center w-fit m-auto text-xl py-6 px-20 
          bg-background2 rounded-lg mb-[3.1rem] border border-border"
