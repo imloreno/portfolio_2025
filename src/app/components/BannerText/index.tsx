@@ -13,7 +13,7 @@ const BannerText = () => {
       <h2 className="text-4xl font-bold">
         Creative <span className="text-secondary">Full-Stack</span>
       </h2>
-      <p className="text-xl font-semibold mt-[16vh]">
+      <p className="text-xl font-semibold mt-[24vh]">
         Around {Math.round(yearsOfExperience)} years <br /> working as{" "}
         <span className="text-secondary">Frontend</span> engineer.
       </p>
