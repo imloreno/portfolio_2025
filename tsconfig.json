@@ -30,6 +30,9 @@
       "@layouts/*": [
         "./src/app/layouts/*"
       ],
+      "@models/*": [
+        "./src/app/models/*"
+      ],
       "@/*": [
         "./src/*"
       ],

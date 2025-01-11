@@ -10,10 +10,13 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
+        background2: "var(--background2)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
         text1: "var(--text1)",
+        border: "var(--border)",
       },
+      fontSize: {},
     },
   },
   plugins: [],

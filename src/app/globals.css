@@ -10,14 +10,21 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1f1e1e;
+    --background2: #181818;
     --primary: #f44c36;
     --secondary: #4e80ff;
     --text1: #d3d3d3;
+    --border: #cec2ff;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: var(--text1);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
