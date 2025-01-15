@@ -16,6 +16,8 @@
     --tertiary: #fed766;
     --text1: #d3d3d3;
     --border: #cec2ff;
+    --cursor-color: #cec2ff;
+    --cursor-color-t: rgba(206, 194, 255, 0.547);
   }
 }
 
@@ -28,4 +30,19 @@
 body {
   color: var(--text1);
   background: var(--background);
+  cursor: url("/default.png") 10 7, auto;
+}
+
+a,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+input[type="image"],
+label[for],
+select,
+textarea,
+button,
+.link {
+  cursor: url("/pointer.png") 10 7, auto;
 }

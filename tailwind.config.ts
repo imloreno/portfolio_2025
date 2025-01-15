@@ -16,6 +16,8 @@ export default {
         tertiary: "var(--tertiary)",
         text1: "var(--text1)",
         border: "var(--border)",
+        cursorColor: "var(--cursor-color)",
+        cursorColorT: "var(--cursor-color-t)",
       },
       fontSize: {},
     },
