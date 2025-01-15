@@ -1,3 +1,24 @@
+.experienceContainer::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  top: 9rem;
+  bottom: 9rem;
+  left: 0;
+  background-color: var(--border);
+}
+.experienceItem::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -8.5rem;
+  background-color: var(--secondary);
+}
+
 .triangle {
   position: absolute;
   width: 38rem;
