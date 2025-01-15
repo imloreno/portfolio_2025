@@ -1,5 +1,5 @@
 export interface Customized {
-  style?: string;
+  style?: React.CSSProperties;
   className?: string;
 }
 

@@ -1,0 +1,7 @@
+.triangle {
+  position: absolute;
+  width: 38rem;
+  height: 38rem;
+  background-color: var(--secondary);
+  clip-path: polygon(81% 13%, 0 37%, 63% 96%);
+}

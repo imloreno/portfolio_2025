@@ -1,10 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./about.module.css";
+import Text from "@components/Text";
 
 const About = () => {
   return (
-    <div className="h-[100vh] bg-background grid grid-cols-2">
+    <section className="h-[100vh] bg-background grid grid-cols-2">
       <div className="flex justify-end items-center">
         <div className={`w-[50rem] h-[50rem] relative ${styles.geometric}`}>
           <Image
@@ -20,21 +21,19 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center">
-        <h1 className="text-primary font-semibold text-xl underline">
-          About Me
-        </h1>
-        <h2 className="text-text1 font-bold text-4xl pb-10 pt-5">
+        <Text variant="title">About Me</Text>
+        <Text variant="subtitle" className="pb-10 pt-5">
           I&apos;m <br /> Lorenzo <br /> Arias Villegas
-        </h2>
-        <p className="text-text1 text-xl mt-10 w-[40rem]">
+        </Text>
+        <Text className="mt-10 w-[40rem]">
           💻 Software engineer skilled in frontend development with React.js,
           TypeScript and the ecosystem around it. Also, backend solutions using
           Spring Boot with microservices. Focusing on delivering seamless user
           experiences and scalable systems, I thrive on crafting unique and
           impactful software solutions 🚀.
-        </p>
+        </Text>
       </div>
-    </div>
+    </section>
   );
 };
 
