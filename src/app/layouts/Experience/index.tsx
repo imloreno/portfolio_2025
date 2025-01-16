@@ -18,9 +18,9 @@ const Experience = () => {
             companies <br /> I&apos;ve been worked on
           </Text>
         </div>
-        <div className="">
-          <div className="w-[55vw] h-[55vw] rounded-full bg-tertiary absolute" />
-          <div className="w-[35vw] h-[35vw] bg-primary absolute" />
+        <div className="relative">
+          <div className="w-[55vw] h-[55vw] right-[-20%] rounded-full bg-tertiary absolute" />
+          <div className="w-[50vh] h-[50vh] bottom-4 bg-primary absolute" />
           <div className={styles.triangle} />
         </div>
       </div>
@@ -33,7 +33,7 @@ const Experience = () => {
             .map((jobExperience: JobBasicInformation) => (
               <div
                 key={jobExperience.id}
-                className={`flex gap-x-10 items-center h-[18rem] relative ${styles.experienceItem}`}
+                className={`flex gap-x-20 items-center h-[18rem] relative ${styles.experienceItem}`}
               >
                 <div className="absolute left-[-15vw] top-[50%] translate-y-[-50%]">
                   <p>
@@ -41,7 +41,7 @@ const Experience = () => {
                   </p>
                 </div>
                 <div
-                  className="w-[18vw] h-[18vw] border border-border shadow-2xl shadow-shadow rounded-lg 
+                  className="h-full aspect-square border border-border shadow-2xl shadow-shadow rounded-lg 
                     overflow-hidden relative"
                 >
                   <Image
@@ -52,7 +52,7 @@ const Experience = () => {
                     sizes="100%"
                   />
                 </div>
-                <div className="max-w-[40rem]">
+                <div className="max-w-[30rem]">
                   <p
                     className="text-border w-fit text-[1.7vw] font-bold relative pb-2
                     before::content-[''] before:w-full before:h-[.2rem] before:bg-border before:absolute before:bottom-0 before:left-0 before:z-0"

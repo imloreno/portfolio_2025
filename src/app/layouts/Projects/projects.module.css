@@ -1,0 +1,18 @@
+.triangle {
+  position: absolute;
+  width: 38vw;
+  height: 38vw;
+  right: 0;
+  background-color: var(--tertiary);
+  clip-path: polygon(81% 13%, 0 37%, 63% 96%);
+}
+
+.line {
+  position: absolute;
+  width: 0.5rem;
+  height: 70vh;
+  background-color: var(--primary);
+  transform: rotate(30deg);
+  right: 10vw;
+  z-index: 1;
+}
