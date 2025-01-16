@@ -3,6 +3,7 @@ import Banner from "@layouts/Banner";
 import ContentLayout from "@layouts/ContentLayout";
 import Experience from "@layouts/Experience";
 import Features from "@layouts/Features";
+import Projects from "@layouts/Projects";
 import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <Features />
         <About />
         <Experience />
+        <Projects />
       </ContentLayout>
     </main>
   );

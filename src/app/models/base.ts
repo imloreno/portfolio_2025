@@ -9,4 +9,6 @@ export enum IconType {
   copilot = "copilot",
   translate = "translate",
   handshake = "handshake",
+  github = "github",
+  details = "details",
 }

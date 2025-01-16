@@ -4,6 +4,8 @@ import styles from "./experience.module.css";
 import { jobExperienceList } from "@constants/jobExperience";
 import { JobBasicInformation } from "@models/jobExperience";
 import Image from "next/image";
+import Icon from "@components/Icon";
+import { IconType } from "@models/base";
 
 const Experience = () => {
   return (
@@ -17,14 +19,14 @@ const Experience = () => {
           </Text>
         </div>
         <div className="">
-          <div className="w-[70rem] h-[70rem] after:rounded-full bg-tertiary absolute" />
-          <div className="w-[35rem] h-[35rem] bg-primary absolute" />
+          <div className="w-[55vw] h-[55vw] rounded-full bg-tertiary absolute" />
+          <div className="w-[35vw] h-[35vw] bg-primary absolute" />
           <div className={styles.triangle} />
         </div>
       </div>
       <section className="min-h-[100vh] my-40">
         <div
-          className={`ml-[20rem] mt-20 flex flex-col gap-y-40 pl-[8rem] relative ${styles.experienceContainer}`}
+          className={`ml-[18vw] mt-20 flex flex-col gap-y-40 pl-[8vw] relative ${styles.experienceContainer}`}
         >
           {jobExperienceList
             .reverse()
@@ -33,13 +35,13 @@ const Experience = () => {
                 key={jobExperience.id}
                 className={`flex gap-x-10 items-center h-[18rem] relative ${styles.experienceItem}`}
               >
-                <div className="absolute left-[-15rem] top-[50%] translate-y-[-50%]">
+                <div className="absolute left-[-15vw] top-[50%] translate-y-[-50%]">
                   <p>
                     {jobExperience.startDate} <br /> {jobExperience.endDate}
                   </p>
                 </div>
                 <div
-                  className="w-[18rem] h-[18rem] border border-border shadow-2xl shadow-shadow rounded-lg 
+                  className="w-[18vw] h-[18vw] border border-border shadow-2xl shadow-shadow rounded-lg 
                     overflow-hidden relative"
                 >
                   <Image
@@ -52,24 +54,23 @@ const Experience = () => {
                 </div>
                 <div className="max-w-[40rem]">
                   <p
-                    className="text-border w-fit text-4xl font-bold relative pb-2
+                    className="text-border w-fit text-[1.7vw] font-bold relative pb-2
                     before::content-[''] before:w-full before:h-[.2rem] before:bg-border before:absolute before:bottom-0 before:left-0 before:z-0"
                   >
                     {jobExperience.position}
                   </p>
-                  <p className="text-xl font-semibold mt-2 mb-4">
+                  <p className="text-[1.1vw] font-semibold mt-2 mb-4">
                     <span className="text-secondary">
                       {jobExperience.company}
                     </span>
                     {" - "}
                     <span className="text-text1">{jobExperience.type}</span>
                   </p>
-                  <p className="text-xl text-text2">
+                  <p className="text-[1.1vw] text-text2">
                     {jobExperience.briefDescription}
                   </p>
-                  <div className="flex gap-x-2 mt-2">
-                    <span className="font-bold text-tertiary">Skills: </span>
-                    <div className="flex text-base gap-x-6 flex-wrap">
+                  <div className="mt-2">
+                    <div className="flex text-[.9vw] gap-x-6 flex-wrap">
                       {jobExperience.skills.map((skill) => (
                         <p
                           key={skill}
@@ -82,6 +83,22 @@ const Experience = () => {
                         </p>
                       ))}
                     </div>
+                  </div>
+                  <div className="flex gap-x-4 mt-4">
+                    <button
+                      className="rounded-md py-2 px-6 bg-primary flex items-center gap-x-2
+                      font-semibold hover:scale-[1.03]"
+                    >
+                      <Icon type={IconType.details} />
+                      <span>Details</span>
+                    </button>
+                    <button
+                      className="rounded-md py-2 px-6 border-border border flex items-center gap-x-2
+                      font-semibold hover:scale-[1.03]"
+                    >
+                      <Icon type={IconType.github} />
+                      <span>GitHub</span>
+                    </button>
                   </div>
                 </div>
               </div>

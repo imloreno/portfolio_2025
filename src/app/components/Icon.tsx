@@ -3,6 +3,8 @@ import { Customized, IconType } from "@models/base";
 import { FaAward, FaHandshake, FaLaptopCode } from "react-icons/fa";
 import { GoCopilot } from "react-icons/go";
 import { MdGTranslate } from "react-icons/md";
+import { TbListDetails } from "react-icons/tb";
+import { FiGithub } from "react-icons/fi";
 
 const icons = {
   laptop: FaLaptopCode,
@@ -10,6 +12,8 @@ const icons = {
   copilot: GoCopilot,
   translate: MdGTranslate,
   handshake: FaHandshake,
+  github: FiGithub,
+  details: TbListDetails,
 };
 
 interface Props extends Customized {

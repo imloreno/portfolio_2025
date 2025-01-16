@@ -15,14 +15,14 @@
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-  left: -8.5rem;
+  left: calc(-8vw - 0.5rem);
   background-color: var(--secondary);
 }
 
 .triangle {
   position: absolute;
-  width: 38rem;
-  height: 38rem;
+  width: 38vw;
+  height: 38vw;
   background-color: var(--secondary);
   clip-path: polygon(81% 13%, 0 37%, 63% 96%);
 }

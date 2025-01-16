@@ -16,6 +16,7 @@ export default {
         tertiary: "var(--tertiary)",
         text1: "var(--text1)",
         text2: "var(--text2)",
+        text3: "var(--text3)",
         border: "var(--border)",
         cursorColor: "var(--cursor-color)",
         cursorColorT: "var(--cursor-color-t)",
