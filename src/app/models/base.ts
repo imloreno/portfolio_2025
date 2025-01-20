@@ -11,4 +11,9 @@ export enum IconType {
   handshake = "handshake",
   github = "github",
   details = "details",
+  email = "email",
+  website = "website",
+  linkedIn = "linkedIn",
+  map = "map",
+  phone = "phone",
 }

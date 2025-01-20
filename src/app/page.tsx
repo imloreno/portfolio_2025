@@ -1,8 +1,10 @@
 import About from "@layouts/About";
 import Banner from "@layouts/Banner";
+import Contact from "@layouts/Contact";
 import ContentLayout from "@layouts/ContentLayout";
 import Experience from "@layouts/Experience";
 import Features from "@layouts/Features";
+import Footer from "@layouts/Footer";
 import Projects from "@layouts/Projects";
 import AnimatedCursor from "react-animated-cursor";
 
@@ -39,6 +41,8 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <Contact />
+        <Footer />
       </ContentLayout>
     </main>
   );

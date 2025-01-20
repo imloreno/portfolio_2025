@@ -15,17 +15,17 @@ const Link = ({
   children,
   className,
   target = "_self",
-  icon = "default",
+  icon,
 }: LinkProps) => {
   return (
     <LinkComponent
       href={href}
-      className={`${className} py-3 px-6 rounded-md bg-primary font-bold flex gap-x-1 items-center
+      className={`${className} py-3 px-6 rounded-md bg-primary font-bold flex gap-x-2 items-center
       hover:scale-[1.03]`}
       target={target}
       rel="noopener noreferrer"
     >
-      <Icon type={icon as IconType} className="text-[1.2em]" />
+      {icon && <Icon type={icon as IconType} className="text-[1.2em]" />}
       {children}
     </LinkComponent>
   );
