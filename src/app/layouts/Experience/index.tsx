@@ -33,7 +33,7 @@ const Experience = () => {
             .map((jobExperience: JobBasicInformation) => (
               <div
                 key={jobExperience.id}
-                className={`flex gap-x-20 items-center h-[18rem] relative ${styles.experienceItem}`}
+                className={`flex gap-x-10 items-center h-[20rem] relative ${styles.experienceItem}`}
               >
                 <div className="absolute left-[-15vw] top-[50%] translate-y-[-50%]">
                   <p>
@@ -52,7 +52,7 @@ const Experience = () => {
                     sizes="100%"
                   />
                 </div>
-                <div className="max-w-[30rem]">
+                <div className="max-w-[40rem]">
                   <p
                     className="text-border w-fit text-[1.7vw] font-bold relative pb-2
                     before::content-[''] before:w-full before:h-[.2rem] before:bg-border before:absolute before:bottom-0 before:left-0 before:z-0"
@@ -84,7 +84,7 @@ const Experience = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="flex gap-x-4 mt-4">
+                  <div className="flex gap-x-4 mt-4 pb-3">
                     <button
                       className="rounded-md py-2 px-6 bg-primary flex items-center gap-x-2
                       font-semibold hover:scale-[1.03]"

@@ -11,11 +11,11 @@ const Text = ({ className, style, children, variant = "default" }: Props) => {
     case "title":
       return (
         <h1
-          className={`text-primary font-semibold text-[1.3vw] relative w-fit ${className}
-            after:content-[''] after:block after:w-full after:h-1 after:bg-primary after:mt-1`}
+          className="text-primary font-semibold text-[1.3vw] relative w-fit
+            after:content-[''] after:block after:w-full after:h-1 after:bg-primary after:mt-1"
           style={style}
         >
-          {children}
+          <span className={className}>{children}</span>
         </h1>
       );
     case "subtitle":
@@ -29,8 +29,8 @@ const Text = ({ className, style, children, variant = "default" }: Props) => {
       );
     default:
       return (
-        <p className={`text-text1 text-[1.3vw] ${className}`} style={style}>
-          {children}
+        <p className={`text-text1 text-[1.3vw]`} style={style}>
+          <span className={className}>{children}</span>
         </p>
       );
   }

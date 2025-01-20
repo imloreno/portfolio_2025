@@ -20,6 +20,7 @@ export default {
         border: "var(--border)",
         cursorColor: "var(--cursor-color)",
         cursorColorT: "var(--cursor-color-t)",
+        cursorColorT2: "var(--cursor-color-t-2)",
         shadow: "var(--shadow)",
       },
       fontSize: {},
