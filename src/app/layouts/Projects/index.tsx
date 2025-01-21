@@ -8,14 +8,14 @@ import ProjectCard from "@components/ProjectCard";
 const Projects = () => {
   return (
     <>
-      <div className="h-[100vh] grid grid-cols-2">
+      <div className="h-[100vh] grid grid-cols-2" id="projects">
         <div className="relative">
           <div className={styles.line} />
           <div className="w-[60vw] h-[60vw] left-[-50%] top-[-10%] rounded-full bg-secondary absolute" />
           <div className={styles.triangle} />
         </div>
         <div className="flex flex-col justify-center items-end pr-40">
-          <Text variant="title">My Trajectory</Text>
+          <Text variant="title">My Projects</Text>
           <Text variant="subtitle" className="mt-10 text-right">
             Top <br />
             <span className="text-tertiary">3 projects</span> <br /> made by

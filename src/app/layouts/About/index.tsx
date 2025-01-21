@@ -5,7 +5,7 @@ import Text from "@components/Text";
 
 const About = () => {
   return (
-    <section className="h-[100vh] bg-background grid grid-cols-2">
+    <section className="h-[100vh] bg-background grid grid-cols-2" id="about-me">
       <div className="flex justify-end items-center">
         <div className={`w-[50rem] h-[50rem] relative ${styles.geometric}`}>
           <Image

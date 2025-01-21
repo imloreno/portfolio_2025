@@ -24,7 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-behavior"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body
         className={`${openSans.variable} ${geistMono.variable} antialiased w-[100vw] overflow-x-hidden`}
       >

@@ -10,7 +10,7 @@ import Link from "@components/Link";
 const Experience = () => {
   return (
     <>
-      <div className="h-[100vh] grid grid-cols-2">
+      <div className="h-[100vh] grid grid-cols-2" id="experience">
         <div className="flex flex-col justify-center items-start ml-[12vw]">
           <Text variant="title">My Trajectory</Text>
           <Text variant="subtitle" className="mt-10">

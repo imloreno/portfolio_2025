@@ -7,31 +7,31 @@ const MENU_LIST = [
   {
     id: 1,
     label: "Home",
-    link: "/",
+    link: "/#home",
     icon: IconType.home,
   },
   {
     id: 2,
     label: "About Me",
-    link: "/about-me",
+    link: "/#about-me",
     icon: IconType.aboutMe,
   },
   {
     id: 3,
     label: "Experience",
-    link: "/experience",
+    link: "/#experience",
     icon: IconType.details,
   },
   {
     id: 4,
     label: "Projects",
-    link: "/projects",
+    link: "/#projects",
     icon: IconType.projects,
   },
   {
     id: 5,
     label: "Contact",
-    link: "/contact",
+    link: "/#contact",
     icon: IconType.phone,
   },
 ];

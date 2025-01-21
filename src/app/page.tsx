@@ -10,7 +10,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <AnimatedCursor
         innerSize={8}
         outerSize={50}

@@ -10,7 +10,7 @@ import Link from "@components/Link";
 const Contact = () => {
   return (
     <>
-      <div className="h-[100vh] grid grid-cols-2">
+      <div className="h-[100vh] grid grid-cols-2" id="contact">
         <div className="flex flex-col justify-center ml-[12vw]">
           <Text variant="title">Contact Me</Text>
           <Text variant="subtitle" className="mt-10">

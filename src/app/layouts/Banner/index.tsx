@@ -4,7 +4,10 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <section className="w-[100vw] h-[100vh] bg-background relative grid grid-cols-2 overflow-x-hidden">
+    <section
+      className="w-[100vw] h-[100vh] bg-background relative grid grid-cols-2 overflow-x-hidden"
+      id="home"
+    >
       <div className="flex">
         <ProfilePhoto />
       </div>
