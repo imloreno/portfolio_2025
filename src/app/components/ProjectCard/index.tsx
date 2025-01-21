@@ -43,11 +43,22 @@ const ProjectCard = (props: Project) => {
         </p>
         <Text className="text-2xl font-normal">{props.description}</Text>
       </div>
-      <div className="flex flex-col gap-y-2 justify-center items-center">
-        <Link href={`/projects/${props.id}`} icon="details">
+      <div className="flex flex-col gap-y-4 justify-center items-center">
+        <Link
+          variant="button"
+          href={`/projects/${props.id}`}
+          icon="details"
+          className="border border-primary"
+        >
           Details
         </Link>
-        <Link href={props.github} target="_blank" icon="github">
+        <Link
+          variant="button"
+          href={props.github}
+          target="_blank"
+          icon="github"
+          className="!bg-background border border-border"
+        >
           GitHub
         </Link>
       </div>

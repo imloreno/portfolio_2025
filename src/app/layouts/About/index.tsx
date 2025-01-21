@@ -20,7 +20,7 @@ const About = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center w-[40rem]">
         <Text variant="title">About Me</Text>
         <Text variant="subtitle" className="pb-10 pt-5">
           I&apos;m <br /> Lorenzo <br /> Arias Villegas

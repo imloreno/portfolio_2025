@@ -4,8 +4,8 @@ import styles from "./experience.module.css";
 import { jobExperienceList } from "@constants/jobExperience";
 import { JobBasicInformation } from "@models/jobExperience";
 import Image from "next/image";
-import Icon from "@components/Icon";
 import { IconType } from "@models/base";
+import Link from "@components/Link";
 
 const Experience = () => {
   return (
@@ -85,20 +85,13 @@ const Experience = () => {
                     </div>
                   </div>
                   <div className="flex gap-x-4 mt-4 pb-3">
-                    <button
-                      className="rounded-md py-2 px-6 bg-primary flex items-center gap-x-2
-                      font-semibold hover:scale-[1.03]"
+                    <Link
+                      variant="button"
+                      icon={IconType.details}
+                      href={`/experience/${jobExperience.id}`}
                     >
-                      <Icon type={IconType.details} />
-                      <span>Details</span>
-                    </button>
-                    <button
-                      className="rounded-md py-2 px-6 border-border border flex items-center gap-x-2
-                      font-semibold hover:scale-[1.03]"
-                    >
-                      <Icon type={IconType.github} />
-                      <span>GitHub</span>
-                    </button>
+                      Details
+                    </Link>
                   </div>
                 </div>
               </div>

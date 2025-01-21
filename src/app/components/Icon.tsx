@@ -4,6 +4,7 @@ import {
   FaAward,
   FaGlobe,
   FaHandshake,
+  FaHome,
   FaLaptopCode,
   FaLinkedin,
   FaMapMarked,
@@ -13,8 +14,10 @@ import { GoCopilot } from "react-icons/go";
 import { MdGTranslate, MdOutlineEmail } from "react-icons/md";
 import { TbListDetails } from "react-icons/tb";
 import { FiGithub } from "react-icons/fi";
+import { RiOrganizationChart } from "react-icons/ri";
+import { GiFalling } from "react-icons/gi";
 
-const icons = {
+const icons: Record<IconType, React.FC<React.SVGAttributes<SVGElement>>> = {
   laptop: FaLaptopCode,
   award: FaAward,
   copilot: GoCopilot,
@@ -27,6 +30,9 @@ const icons = {
   linkedIn: FaLinkedin,
   phone: FaMobileAlt,
   map: FaMapMarked,
+  home: FaHome,
+  aboutMe: GiFalling,
+  projects: RiOrganizationChart,
 };
 
 interface Props extends Customized {

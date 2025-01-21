@@ -26,21 +26,28 @@ const Contact = () => {
       </div>
       <section className="min-h-[100vh]">
         <div className="grid grid-cols-2 gap-x-20 items-center justify-center relative max-w-[80rem] m-auto not-italic">
-          <address className="flex flex-col gap-y-10 w-fit mr-auto text-4xl">
+          <address className="flex flex-col w-fit gap-y-4 ml-auto text-2xl not-italic">
+            <Text className="text-border font-bold border-b-2 border-border text-2xl">
+              Contact Me
+            </Text>
             {contactList.map(
               (
                 contact: Record<string, string | number | boolean>,
                 index: number
               ) => (
-                <Link
-                  key={index}
-                  href={contact.link.toString()}
-                  target={contact.external ? "_blank" : "_self"}
-                  className="flex gap-x-4 items-center"
-                >
-                  <Icon type={contact.icon as IconType} />
-                  <span>{contact.value}</span>
-                </Link>
+                <div key={index} className="flex items-center gap-x-4">
+                  <p className="flex items-center gap-x-2 text-primary font-bold">
+                    <Icon type={contact.icon as IconType} /> {contact.title}:
+                  </p>
+                  <Link
+                    key={index}
+                    href={contact.link.toString()}
+                    target={contact.external ? "_blank" : "_self"}
+                    className="flex gap-x-4 items-center"
+                  >
+                    <span>{contact.value}</span>
+                  </Link>
+                </div>
               )
             )}
           </address>

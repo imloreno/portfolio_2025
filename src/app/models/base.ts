@@ -16,4 +16,7 @@ export enum IconType {
   linkedIn = "linkedIn",
   map = "map",
   phone = "phone",
+  home = "home",
+  aboutMe = "aboutMe",
+  projects = "projects",
 }

@@ -20,7 +20,7 @@ const features = [
     icon: IconType.translate,
   },
   {
-    title: "Nice soft skills",
+    title: "Great soft skills",
     icon: IconType.handshake,
   },
 ];

@@ -8,7 +8,19 @@ interface LinkProps extends Customized {
   href: string;
   icon?: string;
   target?: string;
+  variant?: "default" | "button";
 }
+
+const classBuilder = (variant?: "default" | "button") => {
+  switch (variant) {
+    case "default":
+      return "transition-colors duration-200 hover:text-secondary hover:underline";
+    case "button":
+      return "py-3 px-6 rounded-md bg-primary font-bold flex gap-x-2 items-center hover:scale-[1.03]";
+    default:
+      return "";
+  }
+};
 
 const Link = ({
   href,
@@ -16,12 +28,12 @@ const Link = ({
   className,
   target = "_self",
   icon,
+  variant = "default",
 }: LinkProps) => {
   return (
     <LinkComponent
       href={href}
-      className={`${className} py-3 px-6 rounded-md bg-primary font-bold flex gap-x-2 items-center
-      hover:scale-[1.03]`}
+      className={`${className} ${classBuilder(variant)}`}
       target={target}
       rel="noopener noreferrer"
     >
