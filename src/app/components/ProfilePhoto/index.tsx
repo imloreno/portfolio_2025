@@ -11,7 +11,7 @@ const ProfilePhoto = () => {
       <div className={styles.squareDecorator2} />
       <div className={styles.squareDecorator3} />
       <Image
-        src="/profile1.png"
+        src="/profile.png"
         alt="banner"
         objectFit="contain"
         fill={true}

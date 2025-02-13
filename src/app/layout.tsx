@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "Lorenzo Arias Villegas",
   description:
     "Personal website of Lorenzo Arias Villegas. More than 5 years of experience in software development. I'm a Full Stack Developer with a focus on Frontend technologies.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "black",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

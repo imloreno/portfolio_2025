@@ -58,8 +58,8 @@ const Menu = () => {
   return (
     <nav className="sticky top-2 z-10">
       <ul
-        className="flex gap-6 items-center justify-center w-fit m-auto text-xl h-16 px-20 
-         bg-background2 rounded-lg mb-[3.1rem] border border-border font-semibold"
+        className="flex gap-6 items-center justify-center w-fit m-auto text-md h-16 px-20
+        uppercase bg-background2 rounded-lg mb-[3.1rem] border border-border font-semibold"
       >
         {MENU_LIST.map(({ id, ...menuItemProps }) => {
           return <MenuItem key={id} {...menuItemProps} />;
