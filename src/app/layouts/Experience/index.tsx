@@ -6,11 +6,15 @@ import { JobBasicInformation } from "@models/jobExperience";
 import Image from "next/image";
 import { IconType } from "@models/base";
 import Link from "@components/Link";
+import SectionLayout from "@components/SectionLayout";
 
 const Experience = () => {
   return (
     <>
-      <div className="h-[100vh] grid grid-cols-2" id="experience">
+      <SectionLayout
+        className="h-[100vh] overflow-hidden grid grid-cols-2"
+        id="experience"
+      >
         <div className="flex flex-col justify-center items-start ml-[12vw]">
           <Text variant="title">My Trajectory</Text>
           <Text variant="subtitle" className="mt-10">
@@ -20,10 +24,10 @@ const Experience = () => {
         </div>
         <div className="relative">
           <div className="w-[55vw] h-[55vw] right-[-20%] rounded-full bg-tertiary absolute" />
-          <div className="w-[50vh] h-[50vh] bottom-4 bg-primary absolute" />
+          <div className="w-[30vw] h-[30vw] bottom-10 bg-primary absolute" />
           <div className={styles.triangle} />
         </div>
-      </div>
+      </SectionLayout>
       <section className="min-h-[100vh] my-40">
         <div
           className={`ml-[18vw] mt-20 flex flex-col gap-y-40 pl-[8vw] relative ${styles.experienceContainer}`}

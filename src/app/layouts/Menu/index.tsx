@@ -56,9 +56,9 @@ const MenuItem = ({
 
 const Menu = () => {
   return (
-    <nav className="sticky top-2 z-10">
+    <nav className="sticky top-4 z-10 flex justify-end w-full">
       <ul
-        className="flex gap-6 items-center justify-center w-fit m-auto text-md h-16 px-20
+        className="flex gap-6 items-center justify-center w-fit text-md h-16 px-20 mr-8
         uppercase bg-background2 rounded-lg mb-[3.1rem] border border-border font-semibold"
       >
         {MENU_LIST.map(({ id, ...menuItemProps }) => {

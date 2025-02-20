@@ -6,7 +6,7 @@ const BannerText = () => {
     DateTime.fromISO("2019-01-01").diffNow("years").years * -1;
 
   return (
-    <div className="p-20 mt-[25vh]">
+    <div className="p-20">
       <h1 className="text-[8vw] leading-[8vw] font-bold text-primary">
         Lorenzo
       </h1>

@@ -2,12 +2,13 @@ import Image from "next/image";
 import React from "react";
 import styles from "./about.module.css";
 import Text from "@components/Text";
+import SectionLayout from "@components/SectionLayout";
 
 const About = () => {
   return (
-    <section className="h-[100vh] bg-background grid grid-cols-2" id="about-me">
-      <div className="flex justify-end items-center">
-        <div className={`w-[50rem] h-[50rem] relative ${styles.geometric}`}>
+    <SectionLayout id="about-me" className="bg-background grid grid-cols-2">
+      <div className="flex justify-end items-center h-full">
+        <div className={`w-[50vw] h-[50vw] relative ${styles.geometric}`}>
           <Image
             src="/about_me.png"
             alt="Lorenzo Arias Villegas"
@@ -33,7 +34,7 @@ const About = () => {
           impactful software solutions 🚀.
         </Text>
       </div>
-    </section>
+    </SectionLayout>
   );
 };
 

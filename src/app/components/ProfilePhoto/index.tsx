@@ -5,7 +5,7 @@ import styles from "./profilePhoto.module.css";
 const ProfilePhoto = () => {
   return (
     <div
-      className={`borde mt-auto w-[70vw] h-[85vh] relative ${styles.container}`}
+      className={`borde mt-auto w-[70vw] h-[90%] relative ${styles.container}`}
     >
       <div className={styles.squareDecorator1} />
       <div className={styles.squareDecorator2} />

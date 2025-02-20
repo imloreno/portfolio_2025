@@ -35,8 +35,8 @@ export default function Home() {
         }}
         showSystemCursor={true}
       />
-      <Banner />
       <ContentLayout>
+        <Banner />
         <Features />
         <About />
         <Experience />

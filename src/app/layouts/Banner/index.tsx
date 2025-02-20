@@ -1,20 +1,20 @@
+import React from "react";
 import BannerText from "@components/BannerText";
 import ProfilePhoto from "@components/ProfilePhoto";
-import React from "react";
+import SectionLayout from "@components/SectionLayout";
 
 const Banner = () => {
   return (
-    <section
-      className="w-[100vw] h-[100vh] bg-background relative grid grid-cols-2 overflow-x-hidden"
-      id="home"
-    >
-      <div className="flex">
-        <ProfilePhoto />
+    <SectionLayout id="home" className="w-[100vw] border-b border-cursorColorT">
+      <div className="h-full relative grid grid-cols-2 align-center">
+        <div className="flex">
+          <ProfilePhoto />
+        </div>
+        <div className="flex justify-start items-center">
+          <BannerText />
+        </div>
       </div>
-      <div className="">
-        <BannerText />
-      </div>
-    </section>
+    </SectionLayout>
   );
 };
 

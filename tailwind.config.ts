@@ -23,7 +23,11 @@ export default {
         cursorColorT2: "var(--cursor-color-t-2)",
         shadow: "var(--shadow)",
       },
-      fontSize: {},
+      fontSize: {
+        // size1: "clamp(1.2rem, 1.5vw, 1.5rem)",
+        // size2: "clamp(1rem, 1.2vw, 1.2rem)",
+        // size3: "clamp(0.8rem, 1vw, 1rem)",
+      },
     },
   },
   plugins: [],

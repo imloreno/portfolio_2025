@@ -7,7 +7,7 @@ interface Props {
 
 const ContentLayout = ({ children }: Props) => {
   return (
-    <section className="relative mt-[-8rem]">
+    <section className="relative mt-[-6rem]">
       <Menu />
       {children}
     </section>
