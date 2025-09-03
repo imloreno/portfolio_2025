@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #1f1e1e;
+
+  /* Font Size */
+  --normal-text: clamp(1rem, 1.5vw, 1.5rem);
 }
 
 @media (prefers-color-scheme: dark) {
